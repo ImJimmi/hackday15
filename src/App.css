@@ -1,0 +1,42 @@
+svg {
+    position: absolute;
+}
+
+#painter {
+    margin-left: 737px;
+    margin-top: 218px;
+}
+
+#painter {
+    z-index: 999;
+}
+
+@media screen and (min-width: 1131px) {
+    #painter > #vertical {
+        display: none;
+    }
+    #painter > #horizontal {
+        display: block;
+    }
+
+    #group2 {
+        margin-left: 1010px;
+        margin-top: 222px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    #painter > #vertical {
+        display: block;
+    }
+    #painter > #horizontal {
+        display: none;
+    }
+
+    #group2 {
+        margin-left: 0px;
+        margin-top: 522px;
+        transform-origin: 50% 50%;
+        transform: scaleX(-1);
+    }
+}
