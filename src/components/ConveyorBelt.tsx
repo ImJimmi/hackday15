@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { ReactComponent as ConveyorBeltSVG } from '../assets/conveyor-belt.svg';
 
-function ConveyorBelt() {
+function ConveyorBelt({ x: Number }) {
     useEffect(() => {
         function rotate() {
             const tl = new TimelineMax();
@@ -21,7 +21,11 @@ function ConveyorBelt() {
         repeat.add(rotate());
     }, []);
 
-    return <ConveyorBeltSVG />;
+    return (
+        <g x={x}>
+            <ConveyorBeltSVG />
+        </g>
+    );
 }
 
 export default ConveyorBelt;

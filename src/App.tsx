@@ -1,9 +1,9 @@
-import ConveyorBelt from './components/ConveyorBelt.tsx';
+import Factory from './components/Factory.tsx';
 
 function App() {
     return (
         <>
-            <ConveyorBelt />
+            <Factory />
         </>
     );
 }
