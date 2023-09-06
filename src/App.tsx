@@ -1,9 +1,9 @@
+import ConveyorBelt from './components/ConveyorBelt.tsx';
+
 function App() {
     return (
         <>
-            <svg>
-                <text y="12">Hello, World!</text>
-            </svg>
+            <ConveyorBelt />
         </>
     );
 }
